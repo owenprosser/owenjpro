@@ -1,0 +1,53 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: monospace;
+    color: #F8F8F2;
+}
+
+body{
+    background-color: #282A36;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.left{
+    background-color: #44475A;
+    display: flex;
+    width: 33%;
+    height: 100%;
+}
+
+.right{
+    display: flex;
+    width: 67%;
+    height: 100%;
+}
+
+.me{
+    display: flex;
+    flex-direction: column;
+}
+
+.headshot{
+    height: 108px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+}
+
+.social{
+    height: 20px;
+}
