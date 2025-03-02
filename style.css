@@ -39,15 +39,37 @@ body{
     height: 108px;
     width: 120px;
     border-radius: 50%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .links{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    padding: 5px;
+    gap: 20px;
 }
 
 .social{
-    height: 20px;
+    height: 25px;
+}
+
+@media only screen and (max-device-width: 834px){
+    .body{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 20%;
+    }
+    .right{
+        height: 80%;
+    }
+
+    .social{
+        height: 50px;
+    }
+
+    h1{
+        font-size: 30pt;
+    }
 }
