@@ -1,5 +1,5 @@
 var container;
-var emoji = ['🌽', '🍇', '🍌', '🍒', '🍕', '🍷', '🍭', '💖', '💩', '🐷', '🐸', '🐳', '🎃', '🎾', '🌈', '🍦', '💁', '🔥', '😁', '😱', '🌴', '👏', '💃'];
+var emoji = ['💿', '🖥️', '💻', '🖱️', '💽', '⌨️', '💾', '🤖', '🤓', '🎮'];
 var circles = [];
 
 for (var i = 0; i < 15; i++) {
@@ -31,6 +31,7 @@ function Circle(x, y, c, v, range) {
   this.v = v;
   this.range = range;
   this.element = document.createElement('span');
+  /*this.element.style.display = 'block';*/
   this.element.style.opacity = 0;
   this.element.style.position = 'absolute';
   this.element.style.fontSize = '26px';
@@ -60,6 +61,6 @@ function animate() {
 }
 
 window.addEventListener('load', function() {
-    container = document.getElementById('rain');
+    container = document.getElementById('animate');
     animate();
 })

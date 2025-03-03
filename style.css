@@ -25,6 +25,7 @@ body{
 #animate{
   margin: 0 auto;
   width: auto;
+  height: auto;
   overflow: visible;
   position: relative;
   display: flex;
@@ -46,8 +47,8 @@ body{
 }
 
 .headshot{
-  height: 108px;
-  width: 120px;
+  height: 216px;
+  width: 240px;
   border-radius: 50%;
 }
 
