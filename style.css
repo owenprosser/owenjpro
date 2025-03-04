@@ -50,8 +50,9 @@ h1{
 }
 
 .headshot{
-  height: 216px;
-  width: 240px;
+  max-height: 200px;
+  height: auto;
+  width: auto;
 }
 
 .links{
@@ -62,11 +63,4 @@ h1{
 
 .social{
   height: 25px;
-}
-
-@media only screen and (max-width: 510px) {
-  /* phones */
-  .glass{
-    background-color: black;
-  }
 }
