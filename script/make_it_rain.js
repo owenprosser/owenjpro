@@ -1,5 +1,5 @@
 var container;
-var emoji = ['💿', '🖥️', '💻', '🖱️', '💽', '⌨️', '💾', '🤖', '🤓', '🎮'];
+var emoji = ['💿', '🖥️', '💻', '🖱️', '💽', '⌨️', '💾', '🤖', '📱', '🎮'];
 var circles = [];
 
 for (var i = 0; i < 15; i++) {
@@ -40,7 +40,9 @@ function Circle(x, y, c, v, range) {
   container.appendChild(this.element);
 
   this.update = function() {
-    if (_this.y > 2000) {
+    vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) + 100;
+
+    if (_this.y > vh) {
       _this.y = 80 + Math.random() * 4;
       _this.x = _this.range[0] + Math.random() * _this.range[1];
     }
