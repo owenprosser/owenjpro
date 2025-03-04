@@ -12,11 +12,15 @@ body{
   color: #e7e7e7;
 }
 
+h1{
+  font-size: 3em;
+  padding-bottom: 20px;
+}
+
 #container {
   left: 0px;
   top: -100px;
   height: calc(100vh + 100px);
-  width: 100vw;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -42,14 +46,12 @@ body{
   z-index: 50;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   padding: 20px;
 }
 
 .headshot{
   height: 216px;
   width: 240px;
-  border-radius: 50%;
 }
 
 .links{
@@ -60,4 +62,11 @@ body{
 
 .social{
   height: 25px;
+}
+
+@media only screen and (max-width: 510px) {
+  /* phones */
+  .glass{
+    background-color: black;
+  }
 }

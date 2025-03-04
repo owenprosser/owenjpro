@@ -40,7 +40,7 @@ function Circle(x, y, c, v, range) {
   container.appendChild(this.element);
 
   this.update = function() {
-    if (_this.y > 800) {
+    if (_this.y > 2000) {
       _this.y = 80 + Math.random() * 4;
       _this.x = _this.range[0] + Math.random() * _this.range[1];
     }
